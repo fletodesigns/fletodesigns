@@ -11,14 +11,14 @@ const featuredProjects = [
   {
     title: 'FleBooks',
     description: 'Digital library platform with advanced search capabilities',
-    url: 'https://flebooks.netlify.app',
-    image: '/api/placeholder/400/250',
+    url: 'https://flebooks.vercel.app',
+    image: 'https://cdn.dribbble.com/userupload/39222845/file/original-828964d647d988fc2109fbd88134b06f.png',
     tags: ['React', 'TypeScript', 'Library']
   },
   {
     title: 'FleStorage',
     description: 'Cloud storage solution with intuitive file management',
-    url: 'https://flestorage.netlify.app', 
+    url: 'https://flestorage.vercel.app', 
     image: '/api/placeholder/400/250',
     tags: ['Cloud', 'Storage', 'React']
   },
