@@ -12,7 +12,7 @@ const featuredProjects = [
     title: 'FleBooks',
     description: 'Digital library platform with advanced search capabilities',
     url: 'https://flebooks.vercel.app',
-    image: 'https://cdn.dribbble.com/userupload/39222845/file/original-828964d647d988fc2109fbd88134b06f.png',
+    image: '/favicon.ico',
     tags: ['React', 'TypeScript', 'Library']
   },
   {

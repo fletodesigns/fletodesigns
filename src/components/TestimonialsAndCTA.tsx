@@ -15,8 +15,8 @@ const testimonials = [
     rating: 5
   },
   {
-    name: 'Michael Chen',
-    role: 'Product Manager, InnovateCorp',
+    name: 'Amjed Vanimel',
+    role: 'Senior Developer, Inkuit',
     content: 'Working with FLETO was a game-changer for our business. They delivered beyond our expectations with incredible speed.',
     rating: 5
   },
