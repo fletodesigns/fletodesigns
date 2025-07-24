@@ -12,21 +12,21 @@ const featuredProjects = [
     title: 'FleBooks',
     description: 'Digital library platform with advanced search capabilities',
     url: 'https://flebooks.vercel.app',
-    image: '/favicon.ico',
+    image: 'https://i.pinimg.com/736x/89/c6/85/89c685bfe9b3d6523b585ef0c915e534.jpg',
     tags: ['React', 'TypeScript', 'Library']
   },
   {
     title: 'FleStorage',
     description: 'Cloud storage solution with intuitive file management',
     url: 'https://flestorage.vercel.app', 
-    image: '/api/placeholder/400/250',
+    image: 'https://i.pinimg.com/1200x/62/0a/76/620a76ba6c2124e574c0d257a8929bd6.jpg',
     tags: ['Cloud', 'Storage', 'React']
   },
   {
     title: 'FleSearch',
     description: 'Powerful search engine with smart algorithms',
     url: 'https://flesearch.netlify.app',
-    image: '/api/placeholder/400/250', 
+    image: 'https://i.pinimg.com/1200x/80/43/a0/8043a0e2a6a4adc07add451cc6d918dc.jpg', 
     tags: ['Search', 'AI', 'Web App']
   }
 ];
@@ -86,6 +86,11 @@ export function ProjectsPreview() {
             >
               {/* Project image placeholder */}
               <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
                   <h3 className="text-xl font-bold text-foreground">{project.title}</h3>
