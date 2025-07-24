@@ -9,8 +9,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'CEO, TechStart',
+    name: 'Shammas Ktl',
+    role: 'CEO & Founder, Inkuit',
     content: 'FLETO transformed our vision into a stunning web application. Their attention to detail and technical expertise is unmatched.',
     rating: 5
   },
