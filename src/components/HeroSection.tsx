@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Button } from './ui/button';
 import { ArrowRight, Code, Palette, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 
 export function HeroSection() {
@@ -43,15 +44,8 @@ export function HeroSection() {
     });
   }, []);
 
-  const scrollToServices = () => {
-    const element = document.getElementById('services');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background gradient */}
       <div className="absolute inset-0 hero-gradient opacity-50"></div>
       
@@ -85,10 +79,12 @@ export function HeroSection() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg fleto-glow"
-              onClick={scrollToServices}
+              asChild
             >
-              Explore Our Work
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <Link to="/services">
+                Explore Our Work
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
           </div>
 

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Button } from './ui/button';
 import { ExternalLink, BookOpen, Archive, Search } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -149,9 +150,9 @@ export function ServicesSection() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground fleto-glow"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              asChild
             >
-              Get Started
+              <Link to="/contact">Get Started</Link>
             </Button>
           </div>
         </div>

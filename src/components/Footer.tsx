@@ -1,4 +1,5 @@
 import { Heart, Github, Twitter, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,36 +42,36 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
+                <Link 
+                  to="/"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                <Link 
+                  to="/services"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Services
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                <Link 
+                  to="/about"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   About
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                <Link 
+                  to="/contact"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Contact
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

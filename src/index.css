@@ -36,11 +36,11 @@ All colors MUST be HSL.
     --input: 240 3.7% 15.9%;
     --ring: 173 100% 60%;
 
-    /* FLETO brand colors */
-    --fleto-primary: 173 100% 60%;
-    --fleto-primary-light: 173 100% 70%;
-    --fleto-primary-dark: 173 100% 50%;
-    --fleto-secondary: 173 80% 40%;
+    /* FLETO brand colors - #36ffbf theme */
+    --fleto-primary: 173 100% 60%;      /* #36ffbf */
+    --fleto-primary-light: 173 100% 70%; /* lighter variant */
+    --fleto-primary-dark: 173 100% 50%;  /* darker variant */
+    --fleto-secondary: 173 80% 40%;      /* secondary variant */
     
     /* Glass morphism colors */
     --glass-bg: 240 10% 3.9% / 0.8;
