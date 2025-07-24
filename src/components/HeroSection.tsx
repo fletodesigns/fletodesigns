@@ -58,20 +58,20 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto">
           {/* Main heading */}
           <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-gradient">FLETO</span>
+            <span className="text-foreground">We Build</span>
             <br />
-            <span className="text-foreground">Designs</span>
+            <span className="text-gradient">Digital Magic</span>
           </h1>
 
           {/* Subtitle */}
           <h2 className="hero-subtitle text-xl md:text-2xl text-muted-foreground mb-4">
-            Crafting Digital Experiences
+            Transforming Ideas into Stunning Web Experiences
           </h2>
 
           {/* Description */}
           <p className="hero-description text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-            We create stunning, modern web applications with cutting-edge technology 
-            and beautiful design. Your vision, our expertise.
+            From concept to launch, we craft exceptional web applications that captivate users 
+            and drive results. Experience the future of web development with FLETO Designs.
           </p>
 
           {/* CTA Button */}
