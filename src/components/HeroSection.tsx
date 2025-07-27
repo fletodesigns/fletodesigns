@@ -46,33 +46,69 @@ export function HeroSection() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Multi-layered background */}
-      <div className="absolute inset-0 hero-gradient opacity-60"></div>
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10"></div>
+      {/* Seamless background transition with projects section */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/50"></div>
       
-      {/* Geometric patterns */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 border border-primary/20 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 border border-accent/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/10 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+      {/* Floating particles that extend into projects section */}
+      <div className="absolute inset-0 opacity-40">
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px] animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/3 right-1/5 w-48 h-48 bg-primary/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-primary/8 rounded-full blur-[100px] animate-float" style={{ animationDelay: '1s' }}></div>
       </div>
       
-      {/* Enhanced floating orbs */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-float shadow-2xl shadow-primary/20"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-xl animate-float shadow-2xl shadow-accent/20" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/30 rounded-full blur-lg animate-float shadow-xl shadow-primary/30" style={{ animationDelay: '4s' }}></div>
-      <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-primary/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '6s' }}></div>
-      <div className="absolute bottom-1/3 left-1/3 w-28 h-28 bg-accent/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '3s' }}></div>
+      {/* Grid pattern that continues to projects section */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="grid grid-cols-12 h-full w-full">
+          {Array.from({ length: 144 }).map((_, i) => (
+            <div 
+              key={i} 
+              className="border-r border-b border-primary/20 animate-pulse" 
+              style={{ 
+                animationDelay: `${(i * 0.1) % 3}s`,
+                animationDuration: '4s'
+              }}
+            ></div>
+          ))}
+        </div>
+      </div>
       
-      {/* Elegant mesh overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/5 to-transparent"></div>
-      <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-accent/5 to-transparent"></div>
+      {/* Flowing lines that connect to projects section */}
+      <div className="absolute inset-0 opacity-30">
+        <svg className="w-full h-full" viewBox="0 0 1200 800">
+          <path 
+            d="M 0,400 Q 300,300 600,400 T 1200,400" 
+            stroke="hsl(var(--primary))" 
+            strokeWidth="2" 
+            fill="none" 
+            opacity="0.4"
+            className="animate-pulse"
+          />
+          <path 
+            d="M 0,300 Q 400,200 800,300 T 1200,300" 
+            stroke="hsl(var(--primary))" 
+            strokeWidth="1" 
+            fill="none" 
+            opacity="0.3"
+            className="animate-pulse"
+            style={{ animationDelay: '1s' }}
+          />
+          <path 
+            d="M 0,500 Q 200,600 600,500 T 1200,500" 
+            stroke="hsl(var(--primary))" 
+            strokeWidth="1.5" 
+            fill="none" 
+            opacity="0.2"
+            className="animate-pulse"
+            style={{ animationDelay: '2s' }}
+          />
+        </svg>
+      </div>
       
-      {/* Decorative elements */}
-      <div className="absolute top-10 right-20 w-2 h-20 bg-gradient-to-b from-primary to-transparent opacity-60"></div>
-      <div className="absolute bottom-10 left-20 w-2 h-20 bg-gradient-to-t from-accent to-transparent opacity-60"></div>
-      <div className="absolute top-1/2 right-10 w-20 h-2 bg-gradient-to-l from-primary to-transparent opacity-40"></div>
-      <div className="absolute top-1/2 left-10 w-20 h-2 bg-gradient-to-r from-accent to-transparent opacity-40"></div>
+      {/* Project preview cards floating in background */}
+      <div className="absolute bottom-20 left-8 w-32 h-20 glass-card rounded-lg opacity-20 animate-float border border-primary/20" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute bottom-32 right-12 w-28 h-16 glass-card rounded-lg opacity-15 animate-float border border-primary/10" style={{ animationDelay: '3s' }}></div>
+      <div className="absolute bottom-40 left-1/3 w-24 h-14 glass-card rounded-lg opacity-25 animate-float border border-primary/30" style={{ animationDelay: '2s' }}></div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
