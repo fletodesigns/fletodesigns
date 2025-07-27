@@ -46,13 +46,33 @@ export function HeroSection() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Background gradient */}
-      <div className="absolute inset-0 hero-gradient opacity-50"></div>
+      {/* Multi-layered background */}
+      <div className="absolute inset-0 hero-gradient opacity-60"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10"></div>
       
-      {/* Floating orbs */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/30 rounded-full blur-lg animate-float" style={{ animationDelay: '4s' }}></div>
+      {/* Geometric patterns */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 border border-primary/20 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 border border-accent/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/10 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+      </div>
+      
+      {/* Enhanced floating orbs */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-float shadow-2xl shadow-primary/20"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-xl animate-float shadow-2xl shadow-accent/20" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/30 rounded-full blur-lg animate-float shadow-xl shadow-primary/30" style={{ animationDelay: '4s' }}></div>
+      <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-primary/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '6s' }}></div>
+      <div className="absolute bottom-1/3 left-1/3 w-28 h-28 bg-accent/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '3s' }}></div>
+      
+      {/* Elegant mesh overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/5 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-accent/5 to-transparent"></div>
+      
+      {/* Decorative elements */}
+      <div className="absolute top-10 right-20 w-2 h-20 bg-gradient-to-b from-primary to-transparent opacity-60"></div>
+      <div className="absolute bottom-10 left-20 w-2 h-20 bg-gradient-to-t from-accent to-transparent opacity-60"></div>
+      <div className="absolute top-1/2 right-10 w-20 h-2 bg-gradient-to-l from-primary to-transparent opacity-40"></div>
+      <div className="absolute top-1/2 left-10 w-20 h-2 bg-gradient-to-r from-accent to-transparent opacity-40"></div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
